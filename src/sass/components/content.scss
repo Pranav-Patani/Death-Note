@@ -1,0 +1,43 @@
+.content {
+  width: 90%;
+  height: 85vh;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__corner {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+
+    &-1 {
+      top: -18px;
+      left: -30px;
+    }
+    &-2 {
+      transform: rotate(180deg);
+      right: -30px;
+      bottom: -18px;
+    }
+    &-3 {
+      transform: rotateY(180deg);
+      right: -30px;
+      top: -18px;
+    }
+    &-4 {
+      transform: rotateX(180deg);
+      left: -30px;
+      bottom: -18px;
+    }
+  }
+
+  &__logo {
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: -58px;
+    transform: translateX(-50%);
+  }
+}
